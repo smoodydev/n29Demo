@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/smudge.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/smudge_nav.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="fixed-back"></div>
+    <div class="header-banner">
+        <!-- logo -->
+        <div id="logo">
+            <a href="https://www.n29bedandbreakfast.com"><img
+                    src="https://www.n29bedandbreakfast.com/wp-content/uploads/2012/09/n29-bed-breakfast-amsterdam.png"
+                    alt="N29"></a>
+
+        </div>
+
+        <!-- social links -->
+        <div class="gw-topsocial"><a
+                href="http://www.tripadvisor.co.uk/Hotel_Review-g188590-d3781117-Reviews-N29-Amsterdam_North_Holland_Province.html"
+                target="_blank"><img
+                    src="http://n29bedandbreakfast.com/wp-content/uploads/2015/01/icon-tripadvisor-48x202.png"></a>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row nav-bar">
+            <div class="md1"></div>
+            <div class="md2 nav-item"><a href="{{ url_for('index') }}">Home</a></div>
+            <div class="md2 nav-item"><a href="{{ url_for('index') }}">Rooms</a></div>
+            <div class="md2 nav-item"><a href="{{ url_for('index') }}">About</a></div>
+            <div class="md2 nav-item"><a href="{{ url_for('index') }}">Book</a></div>
+            <div class="md2 nav-item"><a href="{{ url_for('index') }}">Contact</a></div>
+            <div class="md1"></div>
+        </div>
+    </div>
+
+
+    
+    <div class="container-fluid">
+        <div class="row">
+        {% block content %}
+        {% endblock %}
+        </div>
+    </div>
+    
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6, p {
+    color: #5e5e5e;
+    font-family: 'OpenSansLight', Arial, Helvetica, sans-serif;
+}
+
+.header-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.fixed-back {
+    background: url("https://www.n29bedandbreakfast.com/wp-content/uploads/2012/09/amsterdam.jpg") no-repeat center center fixed;
+    height: 100vh;
+    background-position: center;
+    position: fixed;
+    z-index: -100000;
+    top: 166px;
+    min-width: 100vw;
+}
+
+.content {
+    padding: 25px 0 25px 0;
+    margin: 0 36px 0 36px;
+}
+
+.contenter {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.aaa {
+    width: 20%;
+}
